@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculo IMC</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+  <body>
+    <div class="container">
+      <h1>Calculadora IMC</h1>
+      <form>
+        <div class="container-peso">
+          <p>Digite seu peso</p>
+          <input id='peso_slide' class="peso-slider" type="range" min="25" max="200" value="80"/>
+          <p>Peso</p>
+          <input id="peso_dig" class="input-number" type="number" value="80" min="25" max="200" oninput="mostrarPeso(this.value)"/>
+          <span class='text'>kg</span>
+        </div>
+        <div class="container-altura">
+          <p>Digite sua altura</p>
+          <input id='altura_slide' class="altura-slider" type="range" min="25" max="230" value="100"/>
+          <p>Altura</p>
+          <input id="altura_dig" class="input-number" type="number" value="100" min="25" max="230" oninput="mostrarAltura(this.value)"/>
+          <span class='text'>cm</span>
+        </div>
+         <br>
+        <div id='botao'>
+            <input id="btnCalcular" class="botao-calcular" type="button" value="Calcular"/>
+            <div id="resultado" class="imc"></div>
+        </div>
+      </form>
+    </div>
+  </body>  
+</html>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
